@@ -1,0 +1,23 @@
+@include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
+
+.comingsoon{
+    &-s1{
+        background-position-x: 25%!important;
+    }
+}
+.error{
+    &-s1{
+        background-position-x: 60%!important;
+    }
+}
+.privacy{
+    &-s1{
+        background-position-x: left!important;
+    }
+}
+
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
