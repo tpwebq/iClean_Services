@@ -1,8 +1,34 @@
 @include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
 
+.about{
+    &-s1,&-s2{
+        background-position-y: top!important;
+    }
+    &-s1{
+        background-position-x: right!important;
+    }
+    &-s2{
+        background-position-x: left!important;
+    }
+}
+.bg{
+    &-blue{
+        background-color:$color__blue;
+    }
+}
+.border{
+    &-blue{
+        border-color:$color__blue;
+    }
+}
 .comingsoon{
     &-s1{
         background-position-x: 25%!important;
+    }
+}
+.contact{
+    &-s1{
+        background-position-x: center!important;
     }
 }
 .error{
@@ -10,9 +36,24 @@
         background-position-x: 60%!important;
     }
 }
+.index{
+    &-s1{
+        background-position-y: top!important;
+    }
+}
 .navbar{
     &-logo{
         height: $logo__height;
+    }
+}
+.opacity{
+    &-9{
+        opacity:0.9;
+    }
+}
+.order{
+    &-s1{
+        background-position-y: bottom!important;
     }
 }
 .privacy{
@@ -20,10 +61,23 @@
         background-position-x: left!important;
     }
 }
+.services{
+    &-s1{
+        background-color:#aaa!important;
+        background-blend-mode: overlay!important;
+    }
+}
 .text{
+    &-blue{
+        color:$color__blue;
+    }
     &-shadow{
         text-shadow: $text__shadow;
     }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "CarterOne";
+    font-weight: 400;
 }
 header{
     z-index: 10;
@@ -32,11 +86,17 @@ textarea{
     resize: none;
 }
 @media all and (max-width:767px){
+    .index{
+        &-s1{
+            background-color:#aaa!important;
+            background-blend-mode: overlay!important;
+        }
+    }
     .navbar{
         &-nav{
             backdrop-filter: blur(5px); 
-            background-color: #fff;
-            border: 1px solid #999;
+            background-color: $color__blue;
+            border: 1px solid #222;
             opacity: 0.9;
             padding: 10px;
         }
