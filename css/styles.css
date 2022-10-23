@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "CarterOne";
+  src: url("../fonts/CarterOne-Regular.ttf");
+}
 /* line 2, ../sass/partials/_minh.scss */
 .minh-auto {
   min-height: auto;
@@ -291,9 +295,45 @@ body, html {
 }
 
 /* line 31, ../sass/partials/_mixins.scss */
+.about-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/about/about-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.about-s2 {
+  background-attachment: scroll;
+  background-image: url(../img/about/about-s2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.basket-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/basket/basket-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
 .comingsoon-s1 {
   background-attachment: scroll;
   background-image: url(../img/comingsoon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.contact-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/contact/contact-s1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,6 +349,24 @@ body, html {
 }
 
 /* line 31, ../sass/partials/_mixins.scss */
+.index-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/index/index-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.order-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/basket/basket-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
 .privacy-s1 {
   background-attachment: scroll;
   background-image: url(../img/privacy.jpg);
@@ -317,47 +375,121 @@ body, html {
   background-size: cover;
 }
 
+/* line 31, ../sass/partials/_mixins.scss */
+.services-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/services/services-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* line 4, ../sass/partials/_modules.scss */
+.about-s1, .about-s2 {
+  background-position-y: top !important;
+}
+/* line 7, ../sass/partials/_modules.scss */
+.about-s1 {
+  background-position-x: right !important;
+}
+/* line 10, ../sass/partials/_modules.scss */
+.about-s2 {
+  background-position-x: left !important;
+}
+
+/* line 15, ../sass/partials/_modules.scss */
+.bg-blue {
+  background-color: #006cbf;
+}
+
+/* line 20, ../sass/partials/_modules.scss */
+.border-blue {
+  border-color: #006cbf;
+}
+
+/* line 25, ../sass/partials/_modules.scss */
 .comingsoon-s1 {
   background-position-x: 25% !important;
 }
 
-/* line 9, ../sass/partials/_modules.scss */
+/* line 30, ../sass/partials/_modules.scss */
+.contact-s1 {
+  background-position-x: center !important;
+}
+
+/* line 35, ../sass/partials/_modules.scss */
 .error-s1 {
   background-position-x: 60% !important;
 }
 
-/* line 14, ../sass/partials/_modules.scss */
+/* line 40, ../sass/partials/_modules.scss */
+.index-s1 {
+  background-position-y: top !important;
+}
+
+/* line 45, ../sass/partials/_modules.scss */
 .navbar-logo {
   height: 40px;
 }
 
-/* line 19, ../sass/partials/_modules.scss */
+/* line 50, ../sass/partials/_modules.scss */
+.opacity-9 {
+  opacity: 0.9;
+}
+
+/* line 55, ../sass/partials/_modules.scss */
+.order-s1 {
+  background-position-y: bottom !important;
+}
+
+/* line 60, ../sass/partials/_modules.scss */
 .privacy-s1 {
   background-position-x: left !important;
 }
 
-/* line 24, ../sass/partials/_modules.scss */
-.text-shadow {
-  text-shadow: 1px 1px 3px #333;
+/* line 65, ../sass/partials/_modules.scss */
+.services-s1 {
+  background-color: #aaa !important;
+  background-blend-mode: overlay !important;
 }
 
-/* line 28, ../sass/partials/_modules.scss */
+/* line 71, ../sass/partials/_modules.scss */
+.text-blue {
+  color: #006cbf;
+}
+/* line 74, ../sass/partials/_modules.scss */
+.text-shadow {
+  text-shadow: 1px 1px 1px #555;
+}
+
+/* line 78, ../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "CarterOne";
+  font-weight: 400;
+}
+
+/* line 82, ../sass/partials/_modules.scss */
 header {
   z-index: 10;
 }
 
-/* line 31, ../sass/partials/_modules.scss */
+/* line 85, ../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 36, ../sass/partials/_modules.scss */
+  /* line 90, ../sass/partials/_modules.scss */
+  .index-s1 {
+    background-color: #aaa !important;
+    background-blend-mode: overlay !important;
+  }
+
+  /* line 96, ../sass/partials/_modules.scss */
   .navbar-nav {
     backdrop-filter: blur(5px);
-    background-color: #fff;
-    border: 1px solid #999;
+    background-color: #006cbf;
+    border: 1px solid #222;
     opacity: 0.9;
     padding: 10px;
   }

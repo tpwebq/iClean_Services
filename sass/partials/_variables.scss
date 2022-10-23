@@ -1,15 +1,36 @@
 $prefix: "../";
+$color__blue:#006cbf;
 $footer-height: 33px;
+$img__about: 
+    $prefix+"img/about/about-s1.jpg",
+    $prefix+"img/about/about-s2.jpg";
+$img__basket: $prefix+"img/basket/basket-s1.jpg";
 $img__comingsoon: $prefix+"img/comingsoon.jpg";
+$img__contact: $prefix+"img/contact/contact-s1.jpg";
 $img__error: $prefix+"img/error.jpg";
+$img__index: $prefix+"img/index/index-s1.jpg";
+$img__order: $prefix+"img/basket/basket-s1.jpg";
 $img__privacy: $prefix+"img/privacy.jpg";
+$img__services: $prefix+"img/services/services-s1.jpg";
 $img__aoa:
+    $img__about,
+    $img__basket,
     $img__comingsoon,
+    $img__contact,
     $img__error,
-    $img__privacy;
+    $img__index,
+    $img__order,
+    $img__privacy,
+    $img__services;
 $img__classes:
+    "about",
+    "basket",
     "comingsoon",
+    "contact",
     "error",
-    "privacy";
+    "index",
+    "order",
+    "privacy",
+    "services";
 $logo__height: 40px;
-$text__shadow: 1px 1px 3px #333;
+$text__shadow: 1px 1px 1px #555;
